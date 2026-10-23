@@ -1,23 +1,65 @@
 aid: ibl-software-engineering
+
 name: IBL Software Engineering
-description: 'IBL Software Engineering is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.iblsoft.com/wp-content/uploads/dasdas.png
+
+description: 'IBL Software Engineering provides comprehensive weather software solutions, including forecasting workstations, web‑based tools, and data API platforms for meteorological services, aviation, military, universities, and private weather companies. Their products span visual, aero, satellite, numeric, online, moving, recode, open, SWIM, and WIS 2.0 weather data, delivering scalable cloud APIs and extensive documentation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ibl-software-engineering/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Weather
+- Software
+- API
+- Solutions
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/ibl-software-engineering-well-known.yml
+- type: Hosts
+  url: hosts/ibl-software-engineering-hosts.yml
+- type: Security
+  url: https://www.iblsoft.com/security/
+- type: Newsroom
+  url: https://www.iblsoft.com/company/newsroom/
+- type: GitHubOrganization
+  url: https://github.com/iblsoft
+- type: DomainSecurity
+  url: security/ibl-software-engineering-domain-security.yml
 - type: Website
   url: https://www.iblsoft.com
+- type: Documentation
+  url: https://www.iblsoft.com/services/documentation/
+- type: GettingStarted
+  url: https://www.iblsoft.com/products/visual-weather/
+- type: Support
+  url: https://www.iblsoft.com/services/support/
+
+apis: []
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
